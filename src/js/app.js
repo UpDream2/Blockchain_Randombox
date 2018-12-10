@@ -111,8 +111,32 @@ App = {
 	  });
   },
 
+  // cmjeong 2018-12-10 sendEther function created
+  sendEther: function() {
+
+	  var pet_price = web3.toWei(23, 'ether');
+	  var to_address = '0xD29ed41e7D46174038b06B2CB67E07cfd01827cb';
+	  var account = web3.eth.accounts[0];
+
+	  alert(pet_price);
+
+	  web3.eth.sendTransaction({
+		  from: account,
+		  to: to_address,
+		  value: pet_price,
+		  gas: 30000
+	  }, function(err, transactionHash) {
+		  if(err) {
+			  console.log(err);
+		  }
+		  else {
+			  console.log(transactionHash);
+		  }
+	  });
+  },
+
   handleUpload: function(event) {
-	  event.perventDefault();
+	  event.preventDefault();
 
   },
 
@@ -140,6 +164,7 @@ App = {
 			//Execute adopt as a transaction by sending account
 			return adoptionInstance.adopt(petId, {from:account});
 		}).then(function(result) {
+			App.sendEther();	//cmjeong 2018-12-10
 			return App.markAdopted();
 		}).catch(function(err) {
 			console.log(err.message);
