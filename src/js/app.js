@@ -111,7 +111,7 @@ App = {
 	  });
   },
 
-  // cmjeong 2018-12-10 sendEther function created
+  // cmjeong 2018-12-10 sendEther function created .
   sendEther: function() {
 
 	  var pet_price = web3.toWei(23, 'ether');
