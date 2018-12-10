@@ -103,7 +103,7 @@ App = {
 		  for(i=0;i<adopters.length;i++) {
 			  if(adopters[i] !== '0x0000000000000000000000000000000000000000') {
 				  $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
-				  $('.pet-ownership').eq(i).html("<br></br>"+adopters[i]);	//cmjeong add
+				  $('.pet-ownership').eq(i).html("<br></br>"+adopters[i].substring(0, 10));	//cmjeong add
 				  //$('.pet-ownership').eq(i).text(adopters[i]);
 			  }
 		  }
