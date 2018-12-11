@@ -21,6 +21,7 @@ App = {
 		petTemplate.find('.pet-ownership').html("<br></br>"+data[i].ownership);	//cmjeong add
 		//petTemplate.find('.pet-ownership').text('\n'+data[i].ownership);	
 
+        petTemplate.find('.vote_area').text("0");
         petsRow.append(petTemplate.html());
       }
     });
@@ -147,8 +148,11 @@ App = {
     event.preventDefault();
 
     var petId = parseInt($(event.target).data('id'));
-	var randombox_value = 30;	// change it to editbox data.
-	var adoptionInstance;
+    // get vote_area value
+    var randombox_value = $('.vote_area').eq(petId).val();
+    var adoptionInstance = null;
+
+
 
 	web3.eth.getAccounts(function(error, accounts) {
 		if(error) {
