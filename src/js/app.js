@@ -147,11 +147,7 @@ App = {
     event.preventDefault();
 
     var petId = parseInt($(event.target).data('id'));
-
-    /*
-     * Replace me...
-     */
-
+	var randombox_value = 30;	// change it to editbox data.
 	var adoptionInstance;
 
 	web3.eth.getAccounts(function(error, accounts) {
@@ -165,7 +161,7 @@ App = {
 			adoptionInstance = instance;
 
 			//Execute adopt as a transaction by sending account
-			return adoptionInstance.adopt(petId, {from:account});
+			return adoptionInstance.adopt(petId, account, randombox_value, {from:account});
 		}).then(function(result) {
 			App.sendEther();	//cmjeong 2018-12-10
 			return App.markAdopted();
