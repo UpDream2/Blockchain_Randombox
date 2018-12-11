@@ -1,146 +1,34 @@
 [
   {
     "id": 0,
-    "name": "Frieda",
+    "name": "Random Box (Type A)",
     "picture": "images/scottish-terrier.jpeg",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Lisco, Alabama",
-	"ownership": "Santa Claus"
+    "contents": "detail... A",
+    "hint": "50~500",
+    "ownership": "Santa Claus"
   },
   {
     "id": 1,
-    "name": "Gina",
+    "name": "Random Box (Type B)",
     "picture": "images/scottish-terrier.jpeg",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Tooleville, West Virginia",
-	"ownership": "Santa Claus"
+    "contents": "detail... B",
+    "hint": "1~100",
+    "ownership": "Santa Claus"
   },
   {
     "id": 2,
-    "name": "Collins",
+    "name": "Random Box (Type C)",
     "picture": "images/french-bulldog.jpeg",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Freeburn, Idaho",
-	"ownership": "Santa Claus"
+    "contents": "detail... C",
+    "hint": "1~10000",
+    "ownership": "Santa Claus"
   },
   {
     "id": 3,
-    "name": "Melissa",
+    "name": "Random Box (Type D)",
     "picture": "images/boxer.jpeg",
-    "age": 2,
-    "breed": "Boxer",
-    "location": "Camas, Pennsylvania",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 4,
-    "name": "Jeanine",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Gerber, South Dakota",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 5,
-    "name": "Elvia",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 3,
-    "breed": "French Bulldog",
-    "location": "Innsbrook, Illinois",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 6,
-    "name": "Latisha",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 3,
-    "breed": "Golden Retriever",
-    "location": "Soudan, Louisiana",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 7,
-    "name": "Coleman",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 3,
-    "breed": "Golden Retriever",
-    "location": "Jacksonwald, Palau",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 8,
-    "name": "Nichole",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Honolulu, Hawaii",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 9,
-    "name": "Fran",
-    "picture": "images/boxer.jpeg",
-    "age": 3,
-    "breed": "Boxer",
-    "location": "Matheny, Utah",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 10,
-    "name": "Leonor",
-    "picture": "images/boxer.jpeg",
-    "age": 2,
-    "breed": "Boxer",
-    "location": "Tyhee, Indiana",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 11,
-    "name": "Dean",
-    "picture": "images/scottish-terrier.jpeg",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Windsor, Montana",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 12,
-    "name": "Stevenson",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 3,
-    "breed": "French Bulldog",
-    "location": "Kingstowne, Nevada",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 13,
-    "name": "Kristina",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 4,
-    "breed": "Golden Retriever",
-    "location": "Sultana, Massachusetts",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 14,
-    "name": "Ethel",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Broadlands, Oregon",
-	"ownership": "Santa Claus"
-  },
-  {
-    "id": 15,
-    "name": "Terry",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Dawn, Wisconsin",
-	"ownership": "Santa Claus"
+    "contents": "detail... D",
+    "hint": "1~1000",
+    "ownership": "Santa Claus"
   }
 ]

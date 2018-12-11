@@ -8,18 +8,18 @@ App = {
       var petsRow = $('#petsRow');
       var petTemplate = $('#petTemplate');
 
-	  // remove upload button
-	  // petTemplate.find('.btn-upload').attr('data-id', 0);
+      // remove upload button
+      // petTemplate.find('.btn-upload').attr('data-id', 0);
 
       for (i = 0; i < data.length; i ++) {
         petTemplate.find('.panel-title').text(data[i].name);
         petTemplate.find('img').attr('src', data[i].picture);
-        petTemplate.find('.pet-breed').text(data[i].breed);
-        petTemplate.find('.pet-age').text(data[i].age);
-        petTemplate.find('.pet-location').text(data[i].location);
+        petTemplate.find('.pet-contents').text(data[i].contents);
+        // petTemplate.find('.pet-age').text(data[i].age);
+        petTemplate.find('.pet-hint').text(data[i].hint);
         petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
-		petTemplate.find('.pet-ownership').html("<br></br>"+data[i].ownership);	//cmjeong add
-		//petTemplate.find('.pet-ownership').text('\n'+data[i].ownership);	
+        petTemplate.find('.pet-ownership').html("<br></br>"+data[i].ownership);	//cmjeong add
+        // petTemplate.find('.pet-ownership').text('\n'+data[i].ownership);	
 
         petTemplate.find('.vote_area').text("0");
         petsRow.append(petTemplate.html());
