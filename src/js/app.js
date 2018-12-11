@@ -8,7 +8,8 @@ App = {
       var petsRow = $('#petsRow');
       var petTemplate = $('#petTemplate');
 
-	  petTemplate.find('.btn-upload').attr('data-id', 0);
+	  // remove upload button
+	  // petTemplate.find('.btn-upload').attr('data-id', 0);
 
       for (i = 0; i < data.length; i ++) {
         petTemplate.find('.panel-title').text(data[i].name);
@@ -85,7 +86,7 @@ App = {
   },
 
   bindEvents: function() {
-	$(document).on('click', '.btn-upload', App.handleUpload);	// cmjeong create
+	//$(document).on('click', '.btn-upload', App.handleUpload);	// cmjeong create
     $(document).on('click', '.btn-adopt', App.handleAdopt);
   },
 
@@ -136,10 +137,11 @@ App = {
 	  });
   },
 
+  /*
   handleUpload: function(event) {
 	  event.preventDefault();
 
-  },
+  }, */
 
   handleAdopt: function(event) {
     event.preventDefault();
