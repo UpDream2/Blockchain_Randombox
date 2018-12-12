@@ -138,6 +138,15 @@ App = {
 	  });
   },
 
+  isAlphabet: function(str) {
+	  var reg = /[^a-z]/gi;
+
+	  if(reg.test(str))
+		  return false;
+	  else
+		  return true;
+  },
+
   handleUpload: function(event) {
 	  event.preventDefault();
 
@@ -145,9 +154,10 @@ App = {
 
 	  var result_index = $('.result_area').val() -1;	// index start is 1
 
-	  if(result_index < 0 || result_index >3 ) {
+	  if(App.isAlphabet(result_index) == true || result_index < 0 || result_index >3 ) {
 		  alert("Wrong index... try again");
 		  console.log(result_index);
+		  return;
 	  }
 
 	  App.contracts.Adoption.deployed().then(function(instance) {
