@@ -191,7 +191,11 @@ App = {
     var randombox_value = $('.vote_area').eq(petId).val();
     var adoptionInstance = null;
 
-
+	if(App.isAlphabet(randombox_value) == true || randombox_value < 0) {
+		alert("wrong value");
+		console.log(randombox_value);
+		return;
+	}
 
 	web3.eth.getAccounts(function(error, accounts) {
 		if(error) {
