@@ -150,7 +150,18 @@ App = {
 
 		  return adoptionInstance.getResult.call(result_index);	//change value
 	  }).then(function(results) {
-		  alert(results);		// save the JSON file
+		  //alert(results);		// save the JSON file
+		  var filename = "ouput"+result_index.toString()+".json";
+		  var testList = new Array();
+		  testList.push(results);
+		  var obj_json = JSON.stringify(testList);
+		  var blobObject = new Blob([results],{type: "text/plain;charset=utf-8"});
+		  var link = document.createElement("a");
+		  link.download = filename;
+		  link.innerHTML = "Download File";
+		  link.href = window.URL.createObjectURL(blobObject);
+		  link.click();
+		  alert("success");
 	  }).catch(function(err) {
 		  console.log(err);
 	  });
