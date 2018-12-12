@@ -145,6 +145,11 @@ App = {
 
 	  var result_index = $('.result_area').val() -1;	// index start is 1
 
+	  if(result_index < 0 || result_index >3 ) {
+		  alert("Wrong index... try again");
+		  console.log(result_index);
+	  }
+
 	  App.contracts.Adoption.deployed().then(function(instance) {
 		  adoptionInstance = instance;
 
