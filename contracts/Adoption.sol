@@ -63,8 +63,67 @@ contract Adoption {
 		return adopters;
 	}
 
-	//function getResult() public view returns (address[4] ) {
-	//}
+	// result = owner@prev_value@label
+	function getResult(uint petId) public view returns (string) {
+		string memory results = new string(1);
+
+		require(petId>=0 && petId <=15);
+
+		results = resultToString(petId);
+		return results;
+	}
+
+	function resultToString(uint petId) public returns (string) {
+		bytes memory str = new bytes(50);
+
+		bytes32 b_owner = bytes32(uint(items[petId].owner));
+		bytes memory alphabet = "0123456789abcdef";
+
+		uint value = items[petId].prev_value;
+		uint temp = value;
+		uint length;
+		uint length2;
+
+		str[0] = '0';
+		str[1] = 'x';
+
+		for(uint i=0;i<20;i++) {	// address convert to hex data
+			str[i*2+2] = alphabet[uint(b_owner[i + 12] >> 4)];
+			str[i*2+3] = alphabet[uint(b_owner[i + 12] & 0x0f)];
+		}
+
+		str[42] = '@';			//seperator character
+
+		while(temp!=0) {		//prev_value ( approach label score ) 
+			length++;
+			temp = temp/10;
+		}
+
+		temp = length-1;
+
+		while(value != 0) {
+			str[43+ (temp--)] = byte(48 + value % 10);
+			value = value/10;
+		}
+		str[43+length] = '@';
+
+		value = items[petId].label;
+		temp = value;
+
+		while(temp!=0) {		// label
+			length2++;
+			temp = temp/10;
+		}
+
+		temp = length2 -1;
+
+		while(value != 0) {
+			str[44+ length + (temp--)] = byte(48 + value % 10);
+			value = value/10;
+		}
+
+		return string(str);
+	}
 
 }
 

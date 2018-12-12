@@ -8,8 +8,7 @@ App = {
       var petsRow = $('#petsRow');
       var petTemplate = $('#petTemplate');
 
-      // remove upload button
-      // petTemplate.find('.btn-upload').attr('data-id', 0);
+      petTemplate.find('.btn-upload').attr('data-id', 0);
 
       for (i = 0; i < data.length; i ++) {
         petTemplate.find('.panel-title').text(data[i].name);
@@ -87,7 +86,7 @@ App = {
   },
 
   bindEvents: function() {
-	//$(document).on('click', '.btn-upload', App.handleUpload);	// cmjeong create
+	$(document).on('click', '.btn-upload', App.handleUpload);	// cmjeong create
     $(document).on('click', '.btn-adopt', App.handleAdopt);
   },
 
@@ -104,7 +103,7 @@ App = {
 	  }).then(function(adopters) {
 		  for(i=0;i<adopters.length;i++) {
 			  if(adopters[i] !== '0x0000000000000000000000000000000000000000') {
-				  $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
+				  //$('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
 				  $('.pet-ownership').eq(i).html("<br></br>"+adopters[i].substring(0, 10));	//cmjeong add
 				  //$('.pet-ownership').eq(i).text(adopters[i]);
 			  }
@@ -138,11 +137,22 @@ App = {
 	  });
   },
 
-  /*
   handleUpload: function(event) {
 	  event.preventDefault();
 
-  }, */
+	  var adoptionInstance;
+
+	  App.contracts.Adoption.deployed().then(function(instance) {
+		  adoptionInstance = instance;
+
+		  return adoptionInstance.getResult.call(1);	//change value
+	  }).then(function(results) {
+		  alert(results);		// save the JSON file
+	  }).catch(function(err) {
+		  console.log(err);
+	  });
+
+  },
 
   handleAdopt: function(event) {
     event.preventDefault();
