@@ -9,6 +9,7 @@ App = {
       var petTemplate = $('#petTemplate');
 
       petTemplate.find('.btn-upload').attr('data-id', 0);
+	  petTemplate.find('.result_area').text("0");
 
       for (i = 0; i < data.length; i ++) {
         petTemplate.find('.panel-title').text(data[i].name);
@@ -142,10 +143,12 @@ App = {
 
 	  var adoptionInstance;
 
+	  var result_index = $('.result_area').val() -1;	// index start is 1
+
 	  App.contracts.Adoption.deployed().then(function(instance) {
 		  adoptionInstance = instance;
 
-		  return adoptionInstance.getResult.call(1);	//change value
+		  return adoptionInstance.getResult.call(result_index);	//change value
 	  }).then(function(results) {
 		  alert(results);		// save the JSON file
 	  }).catch(function(err) {
