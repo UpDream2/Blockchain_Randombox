@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Random Box (Type A)",
-    "picture": "images/scottish-terrier.jpeg",
+    "picture": "images/box1.jpeg",
     "contents": "detail... A",
     "hint": "50~500",
     "ownership": "Santa Claus"
@@ -10,7 +10,7 @@
   {
     "id": 1,
     "name": "Random Box (Type B)",
-    "picture": "images/scottish-terrier.jpeg",
+    "picture": "images/box2.jpeg",
     "contents": "detail... B",
     "hint": "1~100",
     "ownership": "Santa Claus"
@@ -18,7 +18,7 @@
   {
     "id": 2,
     "name": "Random Box (Type C)",
-    "picture": "images/french-bulldog.jpeg",
+    "picture": "images/box3.jpeg",
     "contents": "detail... C",
     "hint": "1~10000",
     "ownership": "Santa Claus"
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Random Box (Type D)",
-    "picture": "images/boxer.jpeg",
+    "picture": "images/box4.jpeg",
     "contents": "detail... D",
     "hint": "1~1000",
     "ownership": "Santa Claus"
