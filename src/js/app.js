@@ -103,6 +103,7 @@ App = {
 		  return adoptionInstance.getAdopters.call();
 	  }).then(function(adopters) {
 		  for(i=0;i<adopters.length;i++) {
+			  $('.vote_area').eq(i).val("0");
 			  if(adopters[i] !== '0x0000000000000000000000000000000000000000') {
 				  //$('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
 				  $('.pet-ownership').eq(i).html("<br></br>"+adopters[i].substring(0, 10));	//cmjeong add
