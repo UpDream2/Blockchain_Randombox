@@ -16,10 +16,10 @@ contract Adoption {
 			items[i].prev_value = 0;
 		}
 
-		items[0].label = 10;	//change value
-		items[1].label = 10;	//change value
-		items[2].label = 10;	//change value
-		items[3].label = 10;	//change value
+		items[0].label = 3;
+		items[1].label = 564;
+		items[2].label = 219;
+		items[3].label = 977;
 
 	}
 
