@@ -155,7 +155,7 @@ App = {
 
 	  var result_index = $('.result_area').val() -1;	// index start is 1
 
-	  if(App.isAlphabet(result_index) == true || result_index < 0 || result_index >3 ) {
+	  if(App.isAlphabet(result_index) == true || result_index < 0 || result_index > 9 ) {
 		  alert("Wrong index... try again");
 		  console.log(result_index);
 		  return;

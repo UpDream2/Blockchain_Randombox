@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "name": "Random Box (Type A)",
+    "name": "Random Box #1",
     "picture": "images/box1.jpeg",
     "contents": "detail... A",
     "hint": "50~500",
@@ -9,7 +9,7 @@
   },
   {
     "id": 1,
-    "name": "Random Box (Type B)",
+    "name": "Random Box #2",
     "picture": "images/box2.jpeg",
     "contents": "detail... B",
     "hint": "1~100",
@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "name": "Random Box (Type C)",
+    "name": "Random Box #3",
     "picture": "images/box3.jpeg",
     "contents": "detail... C",
     "hint": "1~10000",
@@ -25,8 +25,56 @@
   },
   {
     "id": 3,
-    "name": "Random Box (Type D)",
+    "name": "Random Box #4",
     "picture": "images/box4.jpeg",
+    "contents": "detail... D",
+    "hint": "1~1000",
+    "ownership": "Santa Claus"
+  },
+  {
+    "id": 4,
+    "name": "Random Box #5",
+    "picture": "images/box5.jpeg",
+    "contents": "detail... D",
+    "hint": "1~1000",
+    "ownership": "Santa Claus"
+  },
+  {
+    "id": 5,
+    "name": "Random Box #6",
+    "picture": "images/box6.jpeg",
+    "contents": "detail... D",
+    "hint": "1~1000",
+    "ownership": "Santa Claus"
+  },
+  {
+    "id": 6,
+    "name": "Random Box #7",
+    "picture": "images/box7.jpeg",
+    "contents": "detail... D",
+    "hint": "1~1000",
+    "ownership": "Santa Claus"
+  },
+  {
+    "id": 7,
+    "name": "Random Box #8",
+    "picture": "images/box8.jpeg",
+    "contents": "detail... D",
+    "hint": "1~1000",
+    "ownership": "Santa Claus"
+  },
+  {
+    "id": 8,
+    "name": "Random Box #9",
+    "picture": "images/box9.jpeg",
+    "contents": "detail... D",
+    "hint": "1~1000",
+    "ownership": "Santa Claus"
+  },
+  {
+    "id": 9,
+    "name": "Random Box #10",
+    "picture": "images/box10.jpeg",
     "contents": "detail... D",
     "hint": "1~1000",
     "ownership": "Santa Claus"

@@ -7,11 +7,11 @@ contract Adoption {
 		uint prev_value;
 	}
 
-	item[4] items;
+	item[10] items;
 
 	function Adoption() {
 		uint i;
-		for(i=0;i<4;i++) {
+		for(i=0;i<10;i++) {
 			//items[i].label = 70;	
 			items[i].prev_value = 0;
 		}
@@ -20,6 +20,12 @@ contract Adoption {
 		items[1].label = 564;
 		items[2].label = 219;
 		items[3].label = 977;
+                items[4].label = 4;
+                items[5].label = 5;
+                items[6].label = 6;
+                items[7].label = 7;
+                items[8].label = 8;
+                items[9].label = 9;
 
 	}
 
@@ -54,10 +60,10 @@ contract Adoption {
 	}
 
 	//Retrieving the adopters
-	function getAdopters() public view returns (address[4]) {
-		address[4] adopters;
+	function getAdopters() public view returns (address[10]) {
+		address[10] adopters;
 		uint i;
-		for(i=0;i<4;i++) {
+		for(i=0;i<10;i++) {
 			adopters[i] = items[i].owner;
 		}
 		return adopters;
