@@ -3,80 +3,80 @@
     "id": 0,
     "name": "Random Box #1",
     "picture": "images/box1.jpeg",
-    "contents": "detail... A",
-    "hint": "50~500",
+    "contents": "MAMMOTH-Coffee GiftCard",
+    "hint": "크리스마스 양말에는 좋은 선물이 들어있다고 합니다.",
     "ownership": "Santa Claus"
   },
   {
     "id": 1,
     "name": "Random Box #2",
     "picture": "images/box2.jpeg",
-    "contents": "detail... B",
-    "hint": "1~100",
+    "contents": "Culture GiftCard",
+    "hint": "연말이라 회사에 남은게 있어서 대충 집어넣었다.",
     "ownership": "Santa Claus"
   },
   {
     "id": 2,
     "name": "Random Box #3",
     "picture": "images/box3.jpeg",
-    "contents": "detail... C",
-    "hint": "1~10000",
+    "contents": "Diffuser",
+    "hint": "열리지도 않을 것 같은 녹슨 상자. 좋은 게 있을수도 있고, 안 열릴 수도 있고...",
     "ownership": "Santa Claus"
   },
   {
     "id": 3,
     "name": "Random Box #4",
     "picture": "images/box4.jpeg",
-    "contents": "detail... D",
-    "hint": "1~1000",
+    "contents": "Culture GiftCard",
+    "hint": "개발자가 가장 가지고 싶어서 보물상자에 넣었다.",
     "ownership": "Santa Claus"
   },
   {
     "id": 4,
     "name": "Random Box #5",
     "picture": "images/box5.jpeg",
-    "contents": "detail... D",
-    "hint": "1~1000",
+    "contents": "Diffuser",
+    "hint": "선물이 모자라서 출근길에 대충 사서 넣었다.",
     "ownership": "Santa Claus"
   },
   {
     "id": 5,
     "name": "Random Box #6",
     "picture": "images/box6.jpeg",
-    "contents": "detail... D",
-    "hint": "1~1000",
+    "contents": "Culture GiftCard",
+    "hint": "포장지가 뜯기 어려울수록 더 멋진 선물이 들어있다고 한다.",
     "ownership": "Santa Claus"
   },
   {
     "id": 6,
     "name": "Random Box #7",
     "picture": "images/box7.jpeg",
-    "contents": "detail... D",
-    "hint": "1~1000",
+    "contents": "Air Fryer",
+    "hint": "한쪽이 뜯겨져 있어 안에 내용물이 있을 지 의심이 간다.",
     "ownership": "Santa Claus"
   },
   {
     "id": 7,
     "name": "Random Box #8",
     "picture": "images/box8.jpeg",
-    "contents": "detail... D",
-    "hint": "1~1000",
+    "contents": "Culture GiftCard(10,000)",
+    "hint": "대표님께서 클라스를 보여주시겠다며 넣어놓으셨다.",
     "ownership": "Santa Claus"
   },
   {
     "id": 8,
     "name": "Random Box #9",
     "picture": "images/box9.jpeg",
-    "contents": "detail... D",
-    "hint": "1~1000",
+    "contents": "Culture GiftCard(10,000)",
+    "hint": "딱 봐도 작아보이는 선물이라 별로일 것만 같다.",
     "ownership": "Santa Claus"
   },
   {
     "id": 9,
     "name": "Random Box #10",
     "picture": "images/box10.jpeg",
-    "contents": "detail... D",
-    "hint": "1~1000",
+    "contents": "MAMMOTH-Coffee GiftCard(20,000)",
+    "hint": "당첨자보다 팀원이 더 좋아할꺼야...",
     "ownership": "Santa Claus"
   }
 ]
