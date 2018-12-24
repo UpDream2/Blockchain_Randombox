@@ -15,41 +15,57 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <![endif]-->
+      <style>
+        body, html {
+          margin: 0;
+        }
+        .image {
+          background: url(images/bg.jpeg) no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-position: center;
+          min-height: 100%;
+        }
+      </style>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <h1 class="text-center">Tellion Blockchain RandomBox</h1>
-          <textarea class="result_area" name="Result Index" rows="1">  </textarea>
-		  <button class="btn-upload" type="button" data-id="0">Result</button>
-          <hr/>
-          <br/>
+    <div class="image">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-push-2">
+            <h1 class="text-center">Tellion Blockchain RandomBox</h1>
+            <textarea class="result_area" name="Result Index" rows="1">  </textarea>
+            <button class="btn-upload" type="button" data-id="0">Result</button>
+            <hr/>
+            <br/>
+          </div>
+        </div>
+
+        <div id="petsRow" class="row">
+          <!-- PETS LOAD HERE -->
         </div>
       </div>
 
-      <div id="petsRow" class="row">
-        <!-- PETS LOAD HERE -->
-      </div>
-    </div>
-
-    <div id="petTemplate" style="display: none;">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="panel panel-default panel-pet">
-          <div class="panel-heading">
-            <h3 class="panel-title">Scrappy</h3>
-          </div>
-          <div class="panel-body">
-            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
-            <br/><br/>
-            <!--Modify web structure-->
-            <!--<strong>Contents</strong>: <span class="pet-contents">Default Contents</span><br/>-->
-            <!--<strong>Challenge Cost</strong>: <span class="pet-age">3</span><br/>-->
-            <strong>Hint of Contents</strong>:<br/> <span class="pet-hint">Hint of Contents</span><br/><br/>
-            <strong>Ownership</strong>: <span class="pet-ownership">Owner</span><br/><br/>
-            <textarea class="vote_area" name="vote_value" rows="1"> 0 </textarea>
-            <button class="btn btn-default btn-adopt" type="button" data-id="0">도전</button>
+      <div id="petTemplate" style="display: none;">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="panel panel-default panel-pet">
+            <div class="panel-heading">
+              <h3 class="panel-title">Scrappy</h3>
+            </div>
+            <div class="panel-body">
+              <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
+              <br/><br/>
+              <!--Modify web structure-->
+              <!--<strong>Contents</strong>: <span class="pet-contents">Default Contents</span><br/>-->
+              <!--<strong>Challenge Cost</strong>: <span class="pet-age">3</span><br/>-->
+              <strong>Hint of Contents</strong>:<br/> <span class="pet-hint">Hint of Contents</span><br/><br/>
+              <strong>Ownership</strong>: <span class="pet-ownership">Owner</span><br/><br/>
+              <textarea class="vote_area" name="vote_value" rows="1"> 0 </textarea>
+              <button class="btn btn-default btn-adopt" type="button" data-id="0">도전</button>
+            </div>
           </div>
         </div>
       </div>
